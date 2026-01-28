@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* { margin: 0; }
+
+body {
+  margin: 0;
+  justify-content: center;
+}
+
+.page {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 220px;
+  background-image: url("images/background.png"); /* свой файл */
+  background-repeat: no-repeat;
+  background-position: left top;
+  }                                                                           
+
+.title {
+  width: 846px;
+  margin: 0 auto 110px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 78px;
+  text-align: center;
+  color: #515076;
+}
+
+.product-card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 45px;
+  width: 1110px;
+  margin: 0 auto;
+ }
+
+.product-card {
+  width: 340px;
+  height: 573px;
+  background-color: #F7F7FA;
+  padding: 25px;
+}
+
+.product-card__img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.product-card-container-type {
+  width: 171px;
+  height: 24px;
+}
+
+.product-card__type {
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: flex-start;
+  text-transform: uppercase;
+  color: #A5A3B9;
+}
+
+
+.product-card__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #515076;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+
+
+.product-card__description {
+  margin-bottom: 15px;
+  color: #515076;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+
+.product-card__all-compound {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+}
+
+.product-card__compound {
+  margin: 0;
+  padding: 0;
+  list-style: none;          /* убрали browser marker */
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+  margin-bottom: 25px;
+  }
+
+.product-card__compound-text {
+  margin: 0;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product-card__comp-item {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 14px 1fr;
+  column-gap: 2px;
+  align-items: start;
+}
+
+.product-card__comp-item::before {
+  content: "○";
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.product-card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.product-card__price-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #515076;
+}
+
+.product-card__price-digit {
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #515076;
+
+
+}
