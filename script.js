@@ -1,15 +1,15 @@
-const recolorFirstCardButton = document.getElementById('recolor-first-card-button');
+const firstCardRecolorButton = document.getElementById('recolor-first-card-button');
 const firstCatalogCard = document.querySelector('.product-card')
 const blueHashColor = '#0000FF';
 
-recolorFirstCardButton.addEventListener('click', () => {
+firstCardRecolorButton.addEventListener('click', () => {
   firstCatalogCard.style.backgroundColor = blueHashColor;
 })
 const greenHashColor = '#00ff44';
 const catalogCards = document.querySelectorAll('.product-card');
-const recolorAllCardsButton = document.getElementById('recolor-all-cards-button');
+const allCardsRecolorButton = document.getElementById('recolor-all-cards-button');
 
-recolorAllCardsButton.addEventListener('click', () => {
+allCardsRecolorButton.addEventListener('click', () => {
   catalogCards.forEach (
     card => card.style.backgroundColor = greenHashColor
   )
@@ -21,7 +21,7 @@ googleOpenButton.addEventListener('click', openGoogle);
 function openGoogle() {
   const answer = confirm('Вы действительно хотите перейти на сайт Google?')
   
-  if (answer === true) {
+  if (answer) {
     window.open('https://google.com');
   } else {
     console.log('Пользователей отменил переход на Google')
@@ -37,7 +37,7 @@ title.addEventListener('mouseenter', () => {
 
 //Кнопка меняющая свой цвет
 
-const changeColorButton = document.getElementById('change-color-btn-button');
-changeColorButton.addEventListener('click', () => {
-  changeColorButton.classList.toggle('active')
+const colorChangeButton = document.getElementById('change-color-btn-button');
+colorChangeButton.addEventListener('click', () => {
+  colorChangeButton.classList.toggle('active')
 })
