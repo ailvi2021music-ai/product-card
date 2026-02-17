@@ -21,7 +21,7 @@ checkSpeed(102);
 const product = "MacPro";
 const price = 1000;
 
-function getProduct(budget) { 
+function buyProduct(budget) { 
   if (budget >= price) { 
   console.log(`${product} приобретён. Спасибо за покупку!`);
   } else {
@@ -30,8 +30,8 @@ function getProduct(budget) {
   }
 }
 
-getProduct(730);
-getProduct(1000);
+buyProduct(730);
+buyProduct(1000);
 
 function greet(name) {
   console.log(`Здравствуйте, ${name}! Добро пожаловать в Интернет-Магазин`);
