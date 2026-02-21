@@ -24,7 +24,7 @@ function openGoogle() {
   if (answer) {
     window.open('https://google.com');
   } else {
-    console.log('Пользователей отменил переход на Google')
+    console.log('Пользователь отменил переход на Google')
   }
   }
 
