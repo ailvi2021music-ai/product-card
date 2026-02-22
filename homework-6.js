@@ -25,30 +25,35 @@ function checkMaxSpeed (car){
  checkMaxSpeed(car);
  console.log(car);
 
-function getProperty (object, propertyName){
+function getPropertyObject (object, propertyName){
   console.log(object[propertyName]);
 }
 
-getProperty(car, "color");
+getPropertyObject(car, "color");
 
-const products = ["Молоко", "Мясо", "Апельсины"]
+const products = ["Молоко", "Мясо", "Апельсины"];
 
-const books = [{
-  title: "Коран",
-  author: "Аллах",
-  year: 651,
-  coverColor: "Коричневый",
-  genre: "Религия"
-}, {
+const libraryBooks = [
+  {
+
+    title: "Коран",
+    author: "Аллах",
+    year: 651,
+    coverColor: "Коричневый",
+    genre: "Религия"
+},
+{
+  
   title: "Хадисы",
   author: "Аль-Бухари",
   year: 846,
   coverColor: "Чёрный",
   genre: "Религия"
-}
-]
+}];
 
-books.push({
+libraryBooks.push(
+  {
+
   title: "Война и мир",
   author: "Л.Н.Толстой",
   year: 1869,
@@ -56,19 +61,44 @@ books.push({
   genre: "Роман-Эпопея"
 });
 
-const universeBooks = []
+const universeBooks = [
+  {
 
-universeBooks.push({
   title: "Гарри Поттер и философский камень",
   author: "Дж. К. Роулинг",
   year: 1997,
   coverColor: "Красный",
   genre: "Фэнтези"
-});
+},
+{
 
-const allBooks = [...books,...universeBooks]
+  title: "Гарри Поттер и Тайная комната",
+  author: "Дж. К. Роулинг",
+  year: 1998,
+  coverColor: "Зелёный",
+  genre: "Фэнтези"
+},
+{
+
+    title: "Гарри Поттер и узник Азкабана",
+    author: "Дж. К. Роулинг",
+    year: 1999,
+    coverColor: "Синий",
+    genre: "Фэнтези"
+  }
+];
+
+const allBooks = [
+  
+  ...libraryBooks,
+  ...universeBooks
+]
+
 const booksWithRare = allBooks.map(book => {
-  return { ...book, isRare: book.year > 2000 }
-})
+  return { 
+    ...book, 
+    isRare: book.year > 2000
+  }
+});
 
 console.log(booksWithRare);
