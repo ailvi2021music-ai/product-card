@@ -25,17 +25,16 @@ function checkMaxSpeed (car){
  checkMaxSpeed(car);
  console.log(car);
 
-function getPropertyObject (object, propertyName){
+function getObjectProperty (object, propertyName){
   console.log(object[propertyName]);
 }
 
-getPropertyObject(car, "color");
+getObjectProperty(car, "color");
 
 const products = ["Молоко", "Мясо", "Апельсины"];
 
 const libraryBooks = [
-  {
-
+{
     title: "Коран",
     author: "Аллах",
     year: 651,
@@ -43,17 +42,15 @@ const libraryBooks = [
     genre: "Религия"
 },
 {
-  
   title: "Хадисы",
   author: "Аль-Бухари",
   year: 846,
   coverColor: "Чёрный",
   genre: "Религия"
-}];
+}
+];
 
-libraryBooks.push(
-  {
-
+libraryBooks.push({
   title: "Война и мир",
   author: "Л.Н.Толстой",
   year: 1869,
@@ -63,7 +60,6 @@ libraryBooks.push(
 
 const universeBooks = [
   {
-
   title: "Гарри Поттер и философский камень",
   author: "Дж. К. Роулинг",
   year: 1997,
@@ -71,7 +67,6 @@ const universeBooks = [
   genre: "Фэнтези"
 },
 {
-
   title: "Гарри Поттер и Тайная комната",
   author: "Дж. К. Роулинг",
   year: 1998,
@@ -79,7 +74,6 @@ const universeBooks = [
   genre: "Фэнтези"
 },
 {
-
     title: "Гарри Поттер и узник Азкабана",
     author: "Дж. К. Роулинг",
     year: 1999,
@@ -89,7 +83,6 @@ const universeBooks = [
 ];
 
 const allBooks = [
-  
   ...libraryBooks,
   ...universeBooks
 ]
