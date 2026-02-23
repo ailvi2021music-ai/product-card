@@ -20,10 +20,10 @@ function checkMaxSpeed (car){
   if (car.maxSpeed === undefined) {
     car.maxSpeed = 250;
   }
- }
+}
 
- checkMaxSpeed(car);
- console.log(car);
+checkMaxSpeed(car);
+console.log(car);
 
 function getObjectProperty (object, propertyName){
   console.log(object[propertyName]);
@@ -85,7 +85,7 @@ const universeBooks = [
 const allBooks = [
   ...libraryBooks,
   ...universeBooks
-]
+];
 
 const booksWithRare = allBooks.map(book => {
   return { 
