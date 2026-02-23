@@ -34,20 +34,20 @@ getObjectProperty(car, "color");
 const products = ["Молоко", "Мясо", "Апельсины"];
 
 const libraryBooks = [
-{
+  {
     title: "Коран",
     author: "Аллах",
     year: 651,
     coverColor: "Коричневый",
     genre: "Религия"
-},
-{
-  title: "Хадисы",
-  author: "Аль-Бухари",
-  year: 846,
-  coverColor: "Чёрный",
-  genre: "Религия"
-}
+  },
+  {
+    title: "Хадисы",
+    author: "Аль-Бухари",
+    year: 846,
+    coverColor: "Чёрный",
+    genre: "Религия"
+  }
 ];
 
 libraryBooks.push({
@@ -60,20 +60,20 @@ libraryBooks.push({
 
 const universeBooks = [
   {
-  title: "Гарри Поттер и философский камень",
-  author: "Дж. К. Роулинг",
-  year: 1997,
-  coverColor: "Красный",
-  genre: "Фэнтези"
-},
-{
-  title: "Гарри Поттер и Тайная комната",
-  author: "Дж. К. Роулинг",
-  year: 1998,
-  coverColor: "Зелёный",
-  genre: "Фэнтези"
-},
-{
+    title: "Гарри Поттер и философский камень",
+    author: "Дж. К. Роулинг",
+    year: 1997,
+    coverColor: "Красный",
+    genre: "Фэнтези"
+  },
+  {
+    title: "Гарри Поттер и Тайная комната",
+    author: "Дж. К. Роулинг",
+    year: 1998,
+    coverColor: "Зелёный",
+    genre: "Фэнтези"
+  },
+  {
     title: "Гарри Поттер и узник Азкабана",
     author: "Дж. К. Роулинг",
     year: 1999,
