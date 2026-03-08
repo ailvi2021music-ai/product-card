@@ -16,13 +16,13 @@ const car = {
 
 car.owner = user;
 
-function checkMaxSpeed (car){
+function addMaxSpeed (car){
   if (car.maxSpeed === undefined) {
     car.maxSpeed = 250;
   }
 }
 
-checkMaxSpeed(car);
+addMaxSpeed(car);
 console.log(car);
 
 function getObjectProperty (object, propertyName){

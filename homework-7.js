@@ -1,7 +1,7 @@
 import { comments } from "./comments.js";
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const result = numbers.filter(number => number >= 5);
+const filteredNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const result = filteredNumbers.filter(number => number >= 5);
 
 console.log(result);
 
@@ -19,14 +19,15 @@ console.log(reverse(fruits));
 
 console.log(comments);
 
-console.log(comments.filter(comment => comment.email.includes(".com")));
+const comEmails = comments.filter(comment => comment.email.includes(".com"));
+console.log(comEmails);
 
 comments.forEach(comment => {
-if (comment.id <= 5) {
-  comment.postId = 2;
-} else {
-  comment.postId = 1;
-}
+  if (comment.id <= 5) {
+    comment.postId = 2;
+  } else {
+    comment.postId = 1;
+  }
 });
 
 console.log(comments);
@@ -47,15 +48,15 @@ console.log(comments);
 const emails = comments.map(comment => comment.email);
 console.log(emails);
 
-const emailsReduce = comments.reduce((acc, comment) => {
+const emailsByReduce = comments.reduce((acc, comment) => {
   acc.push(comment.email);
   return acc;
 }, []);
 
-console.log(emailsReduce);
+console.log(emailsByReduce);
 
-const emailString = emailsReduce.toString();
+const emailString = emailsByReduce.toString();
 console.log(emailString);
 
-const emailsJoin = emailsReduce.join(" | ");
+const emailsJoin = emailsByReduce.join(" | ");
 console.log(emailsJoin);
