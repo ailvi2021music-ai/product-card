@@ -25,11 +25,11 @@ function addMaxSpeed (car){
 addMaxSpeed(car);
 console.log(car);
 
-function getObjectProperty (object, propertyName){
+function logObjectProperty (object, propertyName){
   console.log(object[propertyName]);
 }
 
-getObjectProperty(car, "color");
+logObjectProperty(car, "color");
 
 const products = ["Молоко", "Мясо", "Апельсины"];
 

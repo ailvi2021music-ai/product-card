@@ -23,11 +23,7 @@ const comEmails = comments.filter(comment => comment.email.includes(".com"));
 console.log(comEmails);
 
 comments.forEach(comment => {
-  if (comment.id <= 5) {
-    comment.postId = 2;
-  } else {
-    comment.postId = 1;
-  }
+  comment.postId = comment.id <= 5 ? 2 : 1;
 });
 
 console.log(comments);
