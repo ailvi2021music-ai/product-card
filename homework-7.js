@@ -13,7 +13,7 @@ function reverse(array) {
   return array.reverse();
 }
 
-console.log(reverse(numbers));
+console.log(reverse(filteredNumbers));
 console.log(reverse(fruits));
 
 
